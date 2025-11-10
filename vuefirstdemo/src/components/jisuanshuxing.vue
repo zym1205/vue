@@ -33,7 +33,7 @@ export default {
     },
     methods: {
         isDatat() {
-            return this.content.results.length > 0 ? (this.content.text1.length > 0 ? "777777777") : "22222";
+            return this.content.results.length > 0 ? (this.content.text1.length > 0 ? "yes" : "89898989") : "22222";
         }
       
     },
