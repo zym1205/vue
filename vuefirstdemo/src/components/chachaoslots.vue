@@ -15,16 +15,28 @@
                 <h5>插槽2标题</h5>
             </template>
             <template #content>
-                <p>{{ msg }}</p>
+                <p>{{ msg1 }}</p>
             </template>
         </slotsxu>
+        <hr>
+        <h3>插槽3</h3>
+        <slotszaixu>
+           <template v-slot:headerer="slotProps">
+                <h3>{{ current }}--{{ slotProps.msg }}</h3>
+           </template>
+           <template #mainin = "slotProps">
+                <p>{{ slotProps.job }}</p>
+           </template>
+        </slotszaixu>
     </div>
 </template>
 
 <script>
 
+import slotszaixu from '../pages/slotszaixu.vue';
 import slotsBase from '../pages/slotsBase.vue';
 import slotsxu from '../pages/slotsxu.vue';
+
 
 export default {
     name: 'chacaoslots',
@@ -35,7 +47,8 @@ export default {
     },
     components: {
         slotsBase,
-        slotsxu
+        slotsxu,
+        slotszaixu
   }
 }
 </script>
