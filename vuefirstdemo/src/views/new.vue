@@ -7,12 +7,24 @@
         <hr>
         <Zuhexiangyingshi></Zuhexiangyingshi>
         <Zuhejisuanshuxing></Zuhejisuanshuxing>
+        <Zuheshijianchuli></Zuheshijianchuli>
+        <Zuhezhentingqi></Zuhezhentingqi>
+        <Zuhemobanyingyong></Zuhemobanyingyong>
+        <Zuheshengmingzhouqi></Zuheshengmingzhouqi>
+        <ZuheProps></ZuheProps>
+        <Usepinia></Usepinia>
     </div>
 </template>
 
 <script>
+import Usepinia from '../newcomponents/usepinia.vue';
 import Zuhejisuanshuxing from '../newcomponents/zuhejisuanshuxing.vue';
+import Zuhemobanyingyong from '../newcomponents/zuhemobanyingyong.vue';
+import ZuheProps from '../newcomponents/zuheProps.vue';
+import Zuheshengmingzhouqi from '../newcomponents/zuheshengmingzhouqi.vue';
+import Zuheshijianchuli from '../newcomponents/zuheshijianchuli.vue';
 import Zuhexiangyingshi from '../newcomponents/zuhexiangyingshi.vue';
+import Zuhezhentingqi from '../newcomponents/zuhezhentingqi.vue';
 
 
 export default {
@@ -25,6 +37,12 @@ export default {
     components: {
         Zuhexiangyingshi,
         Zuhejisuanshuxing,
+        Zuheshijianchuli,
+        Zuhezhentingqi,
+        Zuhemobanyingyong,
+        Zuheshengmingzhouqi,
+        ZuheProps,
+        Usepinia,
     },
     mounted() {
         setTimeout(() => {
